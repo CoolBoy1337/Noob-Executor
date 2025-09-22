@@ -1,0 +1,9 @@
+local folder = workspace.Map.SquidDirectory.Hopscotch.Scriptables.Glass
+
+for _, a in pairs(folder:GetChildren()) do
+      for _, i in pairs(a:GetChildren()) do
+            if i:FindFirstChild("TouchInterest") then
+                  i:Destroy()
+            end
+      end
+end
